@@ -211,6 +211,7 @@ section ul li {
   overflow: hidden;
   transition: 0.8s;
   border-radius: 5px;
+  background-color: rgb(1, 202, 252);
 }
 .product .number {
   background-color: #07afe2;
@@ -228,7 +229,7 @@ section ul li {
 .product h3 {
   margin: 10px;
   font-size: 25px;
-  color: goldenrod;
+  color: rgb(255, 255, 255);
   transition: 0.8s;
 }
 .product p {
@@ -243,6 +244,112 @@ section ul li {
 .product:hover h3,
 .product:hover p {
   color: white;
+}
+
+/* section7 */
+.sec7 {
+  margin-top: 20px;
+  padding: 50px;
+}
+.sec7 .product2 {
+  width: 400px;
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: gray;
+  border-radius: 10px;
+  box-shadow: 0 0 15px honeydew;
+}
+.sec7 .product2 h2 {
+  padding: 20px;
+  margin: 0 0 16px;
+  background-color: #009685;
+  color: white;
+  width: calc(100% + 80px);
+  position: relative;
+  left: -40px;
+}
+.sec7 .product2 p {
+  line-height: 1.6;
+  color: #ddd;
+  font-size: 18px;
+  font-weight: 500;
+}
+.sec7 .product2 h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  border-width: 10px;
+  border-color: #02766b #02766b transparent transparent;
+  border-style: solid;
+}
+.sec7 .product2 h2::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  border-width: 10px;
+  border-color: #02766b transparent transparent #02766b;
+  border-style: solid;
+}
+
+/* section8 */
+.sec8 {
+  padding: 80px;
+  margin-top: 15px;
+  text-align: center;
+}
+.sec8 button {
+  padding: 10px 20px;
+  display: block;
+  font-size: 20px;
+  border: none;
+  position: relative;
+  background-color: #eee;
+  cursor: pointer;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.tooltip {
+  background-color: #02766b;
+  position: absolute;
+  color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 240px;
+  padding: 10px 15px;
+  top: -60px;
+  transition: 0.9s;
+  border-radius: 10px;
+  opacity: 0;
+}
+.tooltip::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-style: solid;
+  border-color: #02766b transparent transparent transparent;
+  border-width: 10px;
+}
+.sec8 button:hover {
+  overflow: visible;
+}
+.sec8 button:hover .tooltip {
+  opacity: 1;
+}
+
+[data-position="bottom"] .tooltip {
+  top: auto;
+  bottom: -60px;
+}
+[data-position="bottom"] .tooltip::before {
+  bottom: auto;
+  top: -20px;
+  border-color: transparent transparent #02766b transparent;
 }
 
 /* Small devices (landscape phones, 576px and up) */
