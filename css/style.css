@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana,
+    "sans-serif";
+}
+body {
+  height: 5000px;
+}
+
+section {
+  max-width: 1140px;
+  background-color: rgb(0, 190, 190);
+  margin-left: auto;
+  margin-right: auto;
+}
+.sec1 {
+  padding-bottom: 100px;
+}
+.nav {
+  margin-top: 20px;
+  text-align: center;
+  padding-top: 30px;
+}
+section ul {
+  font-size: 16px;
+}
+section ul li {
+  background-color: brown;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+.sec1 ul li:hover {
+  background-color: turquoise;
+}
+.galary {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: center;
+  justify-content: space-around;
+}
+.galary img {
+  padding-top: 15px;
+  max-width: 100%;
+}
+
+/* section2 */
+
+.serial {
+  text-align: center;
+  margin: 15px auto 0;
+  font-size: 20px;
+  padding: 20px;
+  font-weight: bold;
+  height: 66.5px;
+  color: white;
+}
+.generate {
+  background-color: brown;
+  display: block;
+  margin: 20px auto 0;
+  width: fit-content;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+.sec2 {
+  padding-bottom: 20px;
+}
+
+/* section3 */
+
+.sec3 {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.tabs {
+  margin-top: 20px;
+}
+.tabs li {
+  transition: 0.2s;
+}
+
+.tabs li.active,
+.tabs li:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.content {
+  background-color: #ddd;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+}
+.content > div {
+  padding: 20px;
+}
+.content > div:not(:first-child) {
+  display: none;
+}
+
+/* section4 */
+
+.up {
+  position: fixed;
+  bottom: 15px;
+  right: -30px;
+  background-color: burlywood;
+  color: rgb(141, 31, 91);
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.8s;
+}
+.up.show {
+  right: 20px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
